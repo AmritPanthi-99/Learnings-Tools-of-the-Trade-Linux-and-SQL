@@ -1,7 +1,3 @@
-In this course, I learned about the operating system, Linux and Structured Query Language (SQL). I am going to write a note on my undestanding on these two topics.
-Linux:
-Talking about the linux, this operating system is widely used in the cybersecurity field as it can be customized which allows security professionals to tailor the operating system to their specific requirements and also it offers the powerful command lines.
-
 Linux Archhitecture:
 User: The one who interacts with the computer.
 Applications: A program that performs a specific task. In linux, a package manager is used to install applications.
