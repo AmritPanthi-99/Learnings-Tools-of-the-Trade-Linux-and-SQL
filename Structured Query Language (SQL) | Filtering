@@ -1,0 +1,30 @@
+Structured Query Language (SQL): It's a relational database as they can relate data across multiple tables through defined relationships.
+
+Accessing SQL from Linux:
+Command: Enter sqlite3 (or other SQL version command) in the Linux command line to access SQL.
+
+Differences Between Linux and SQL Filtering
+
+1. Purpose:
+Linux: Filters data in files and directories. Useful for searching files, managing permissions, or processes.
+SQL: Filters data within a database management system. Useful for querying and manipulating data in tables.
+
+2. Syntax:
+Linux: Uses varied commands and options. Examples include find, sed, cut, grep.
+SQL: Uses standardized language with specific keywords and clauses. Examples include WHERE, SELECT, JOIN.
+
+3. Structure:
+Linux: Free-form and less organized. Data is often printed as lines of text.
+SQL: More structured, with data organized in columns. Easier to select and analyze specific columns.
+
+4. Joining Tables:
+SQL: Can join multiple tables to return combined data.
+Linux: Cannot directly connect and join data from different sources.
+
+5. Best Uses:
+SQL: Ideal for structured data stored in databases. Common in cybersecurity databases.
+Linux: Ideal for unstructured data stored in text files or logs not compatible with SQL.
+
+6. Practical Use Cases
+SQL: Use when dealing with structured data in databases, where complex queries and joins are required.
+Linux: Use when dealing with file system data or logs in text format, where SQL is not applicable.
