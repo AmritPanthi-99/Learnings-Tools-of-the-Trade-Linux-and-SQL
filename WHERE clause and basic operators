@@ -1,0 +1,52 @@
+Importance of Filtering in SQL for Security Analysts:
+
+Purpose: Filtering in SQL helps security analysts manage and analyze large, complex security logs efficiently.
+
+Use Cases:
+- Identifying login attempts by specific users.
+- Finding login attempts during a specific security event.
+- Detecting devices running particular application versions.
+
+Using the WHERE Clause
+- Function: The WHERE clause sets conditions for filtering data in SQL queries.
+Example:
+SELECT firstname, lastname, title, email
+FROM employees
+WHERE title = 'IT Staff';
+- This query returns only the employees with the title 'IT Staff'.
+
+Filtering for Patterns with Wildcards and LIKE Operator
+
+Purpose: Allows filtering based on specific patterns rather than exact matches.
+
+Wildcards:
+- Percentage Sign (%): Represents any number of characters.
+- Underscore (_): Represents a single character.
+
+Usage Examples:
+a%: Matches any string starting with 'a' (e.g., apple123, art, a).
+a_: Matches any two-character string starting with 'a' (e.g., as, an, a7).
+%a%: Matches any string containing 'a' (e.g., again, back, a).
+
+Using the LIKE operator
+- Function: Used with 'WHERE' tosearch for patterns with column values.
+Example:
+SELECT lastname, firstname, title, email
+FROM employees
+WHERE title LIKE 'IT%';
+- This query returns all records with titles starting with 'IT', such as 'IT Staff' and 'IT Manager'.
+Example:
+SELECT firstname, lastname, state, country
+FROM customers
+WHERE state LIKE 'N_';
+- This query finds all customers in states with abbreviations starting with 'N' followed by any character (e.g., NY, NV, NS, NT).
+
+Summary of Wildcard Patterns
+Pattern	    Results that could be returned
+a%	        apple123, art, a
+a_	        as, an, a7
+a__	        ant, add, a1c
+%a	        pizza, Z6ra, a
+_a	        ma, 1a, Ha
+%a%	        again, back, a
+_a_	        Car, ban, ea7
