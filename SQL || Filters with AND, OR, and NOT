@@ -1,0 +1,66 @@
+1. Using AND Operator
+Function: Combines two conditions that both must be true for a record to be returned.
+
+Example:
+SELECT firstname, lastname, email, country, supportrepid
+FROM customers
+WHERE supportrepid = 5 AND country = 'USA';
+
+- This query returns customers handled by a support representative with ID 5 and located in the USA.
+
+2. Using OR Operator
+Function: Combines two conditions where at least one must be true for a record to be returned.
+
+Example:
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE country = 'Canada' OR country = 'USA';
+- This query returns customers from either the USA or Canada.
+
+3.Using NOT Operator
+Function: Negates a condition, returning records that do not match the specified condition.
+
+Example:
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE NOT country = 'USA';
+
+- This query returns customers not located in the USA.
+
+4. Combining Logical Operators
+Purpose: Allows for more complex filtering by combining multiple conditions using AND, OR, and NOT.
+
+Example:
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE NOT country = 'Canada' AND NOT country = 'USA';
+
+- This query returns customers who are neither in Canada nor in the USA.
+
+5. Pro Tips and Alternatives
+NOT Alternatives: Use <> or != to find values not equal to a certain value.
+WHERE country <> 'USA' or WHERE country != 'USA' is equivalent to WHERE NOT country = 'USA'.
+
+6. Examples of Logical Operator Usage
+Scenario: Finding Specific Customer Data
+AND Operator Usage: Identify customers handled by a specific representative in a particular country.
+
+SELECT firstname, lastname, email, country, supportrepid
+FROM customers
+WHERE supportrepid = 5 AND country = 'USA';
+OR Operator Usage: Identify customers in either of two countries.
+
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE country = 'Canada' OR country = 'USA';
+NOT Operator Usage: Identify customers not in a specific country.
+
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE NOT country = 'USA';
+Combining Logical Operators
+Combining NOT and AND: Identify customers not in two specific countries.
+
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE NOT country = 'Canada' AND NOT country = 'USA';
