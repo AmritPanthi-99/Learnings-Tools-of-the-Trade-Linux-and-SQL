@@ -1,0 +1,11 @@
+Comparison Operators
+Operator    Use
+<           less than 
+>           greater than 
+=           equal to 
+<=          less than or equal to
+>=          greater than or equal to
+<>          not equal to
+
+Note: You can also use != as an alternative operator for not equal to.
+
