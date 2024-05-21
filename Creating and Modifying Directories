@@ -1,0 +1,46 @@
+Creating and Modifying Directories
+1. mkdir: Creates a new directory.
+Usage: mkdir <directory_path>
+Example: mkdir /home/analyst/logs/network
+Verify with: ls
+
+2. rmdir: Removes an empty directory.
+Usage: rmdir <directory_path>
+Example: rmdir /home/analyst/logs/network
+
+Creating and Modifying Files
+1. touch: Creates a new, empty file.
+Usage: touch <file_name>
+Example: touch permissions.txt
+Verify with: ls
+
+2. rm: Removes a file.
+Usage: rm <file_name>
+Example: rm permissions.txt
+
+Moving and Copying Files
+1. mv: Moves or renames a file or directory.
+Usage for moving: mv <source> <destination>
+Usage for renaming: mv <old_name> <new_name>
+Example for moving: mv permissions.txt /home/analyst/logs
+Example for renaming: mv permissions.txt perm.txt
+
+2.cp: Copies a file or directory.
+Usage: cp <source> <destination>
+Example: cp permissions.txt /home/analyst/logs
+
+Editing Files with nano
+1. nano: Command-line text editor for creating and editing files.
+Open a file: nano <file_name>
+Save changes: Ctrl + O, then confirm file name.
+Exit: Ctrl + X
+Example: nano permissions.txt
+
+Standard Output Redirection
+1. >: Redirects and overwrites output to a file.
+Usage: command > <file>
+Example: echo "time" > permissions.txt (overwrites the file)
+
+2. >>: Redirects and appends output to a file.
+Usage: command >> <file>
+Example: echo "last updated date" >> permissions.txt (appends to the file)
