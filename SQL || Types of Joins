@@ -1,0 +1,35 @@
+Types of Joins:
+1. Inner Join
+INNER JOIN returns rows matching on a specified column that exists in more than one table.
+
+Syntax:
+SELECT *
+FROM employees
+INNER JOIN machines ON employees.device_id = machines.device_id;
+
+2. Outer Join
+Outer joins expand what is returned from a join. Each type of outer join returns all rows from either one table or both tables.
+
+A. Left Joins
+LEFT JOIN returns all the records of the first table, but only returns rows of the second table that match on a specified column. 
+
+Syntax:
+SELECT *
+FROM employees
+LEFT JOIN machines ON employees.device_id = machines.device_id;
+
+B. Right Joins
+ RIGHT JOIN returns all of the records of the second table, but only returns rows from the first table that match on a specified column. 
+
+Syntax:
+SELECT *
+FROM employees
+RIGHT JOIN machines ON employees.device_id = machines.device_id;
+
+3. Full Outer Joins
+FULL OUTER JOIN returns all records from both tables. You can think of it as a way of completely merging two tables.
+
+Syntax:
+SELECT *
+FROM employees
+FULL OUTER JOIN machines ON employees.device_id = machines.device_id;
