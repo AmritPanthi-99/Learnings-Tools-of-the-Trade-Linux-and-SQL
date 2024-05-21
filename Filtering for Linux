@@ -1,0 +1,32 @@
+Filtering for Information
+
+Filtering: Selecting data that matches specific conditions, such as file extensions or strings of text.
+
+Key Commands for Filtering and Searching
+
+1. grep
+Purpose: Searches files for lines containing a specified string.
+Usage: grep <string> <file>
+Example: grep OS updates.txt finds all lines containing "OS" in updates.txt.
+Example: grep error time_logs.txt finds all lines containing "error" in time_logs.txt.
+
+2. Piping
+Purpose: Sends the output of one command as input to another using the pipe character (|).
+Usage: command1 | command2
+Example: ls /home/analyst/reports | grep users lists files and directories containing "users" in their names within the reports directory.
+
+3. find
+Purpose: Searches for directories and files based on specified criteria.
+Basic Usage: find <path> <criteria>
+-name: Case-sensitive search for names containing a specific string.
+Example: find /home/analyst/projects -name "*log*"
+-iname: Case-insensitive search for names containing a specific string.
+Example: find /home/analyst/projects -iname "*log*"
+-mtime: Searches for files/directories modified within a certain number of days.
+Example: find /home/analyst/projects -mtime -3 finds files modified in the last 3 days.
+-mtime +1 for files modified more than a day ago, -mtime -1 for files modified less than a day ago.
+-mmin: Similar to -mtime but based on minutes.
+
+Additional Notes
+Wildcard (*): Represents zero or more unknown characters in search criteria.
+Standard Output/Input: Information outputted by the OS vs. information received by the OS via the command line.
