@@ -14,4 +14,40 @@ Internal hardware: The components that are required to run the computer system. 
 
 Linux Distributions:
 Kali Linux: Open-source distribution of Linux that is widely used in the security industry. It is debian-based and is pre-installed with many useful tools for penetration testingand digital forensics.
-Ubuntu: 
+Ubuntu: It has both command-line interface (CLI) and a graphical user interface (GUI).
+Parrot: Similar to Kali Linux. 
+Red Hat Enterprise Linux: It is a subscription-based distribution of linux. It is not free.
+CentOS: It is a open source and it uses a source code published by red hat to provide a similar platform.
+
+Navigate Linux and Read File Content:
+Filesystem Hierarchy Standard (FHS)
+FHS organizes data in Linux, defining directory structures and contents.
+Root Directory: Represented by /, it's the highest level in the hierarchy.
+Standard Directories:
+/home: User home directories.
+/bin: Binary files and executables.
+/etc: System configuration files.
+/tmp: Temporary files, accessible to all users.
+/mnt: Mount point for media like USB drives.
+User-specific Subdirectories: Found under /home, can be represented by ~.
+Navigating the File System
+Absolute Path: Full path from the root, e.g., /home/analyst/projects.
+Relative Path: Path from the current directory, uses . for current and .. for parent directory.
+Key Navigation Commands
+pwd: Prints the current working directory.
+Use whoami to find the current username.
+ls: Lists files and directories in the current or specified directory.
+cd: Changes the current directory.
+cd .. moves up one level.
+Reading File Content
+cat: Displays full file content.
+head: Shows the first 10 lines by default; use -n to specify a different number of lines.
+tail: Shows the last 10 lines by default; useful for log files.
+less: Displays file content one page at a time, with navigation controls:
+Space: Forward one page
+b: Back one page
+Down Arrow: Forward one line
+Up Arrow: Back one line
+q: Quit
+
+
